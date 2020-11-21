@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+// (Dark Mode Elements)
+$DarkBlue: hsl(209, 23%, 22%);
+// (Dark Mode Background)
+$VeryDarkBlue: hsl(207, 26%, 17%);
+// (Light Mode Text)
+$VeryDarkBlue2: hsl(200, 15%, 8%);
+// (Light Mode Input)
+$DarkGray: hsl(0, 0%, 52%);
+// (Light Mode Background)
+$VeryLightGray: hsl(0, 0%, 98%);
+// (Dark Mode Text & Light Mode Elements)
+$White: hsl(0, 0%, 100%);
+
+html, body {
+    height: 100%
+}
+
+.dup-body{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.animation-container{
+    margin-top: 20vh;
+}
+
+body {
+    background-color: $VeryDarkBlue;
+    font-weight: 300;
+    font-family: Nunito Sans;
+    height: 100%;
+}
+
+.bg-veryLightGray{background-color: $VeryLightGray;}
+.bgLightElements{background-color: $White;}
+.bg-test-2 {background-color: green;}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-card {
+    h5 {
+        font-weight: 800;
+    }
+    li {
+        list-style: none;
+    }
+    .sideText {
+        font-weight: 600;
+    }
+}
+
+.page-enter {
+    opacity: 0.01;
+}
+
+.page-enter-active {
+    opacity: 1;
+    transition: all 100ms ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0.01;
+    transition: all 100ms ease-out;
+}
+
+.card-hover-dark:hover{
+    background-color: #444d56;
+}
+
+.card-hover-light:hover{
+    background-color: lightblue;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-test {
+    background-color: red;
+}
+
+.my-bg {
+    background-color: $VeryDarkBlue;
+}
+
+.my-bg-2 {
+    background-color: $DarkBlue;
+}
+
+.mydropdown {
+    font-weight: 300;
+    font-family: Nunito Sans;
+    border: none !important;
+    padding: 1rem;
+    background-color: #2b3945;
+}
+
+.mydropdown-light {
+    font-weight: 300;
+    font-family: Nunito Sans;
+    border: none !important;
+    padding: 1rem;
+    background-color: $White;
+}
+
+.main-body {
+    margin-top: 2rem;
+    .container {
+        max-width: 1200px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.sub-white{
+    .form-control::-webkit-input-placeholder {
+        color: white;
+    } /* WebKit, Blink, Edge */
+    .form-control:-moz-placeholder {
+        color: white;
+    } /* Mozilla Firefox 4 to 18 */
+    .form-control::-moz-placeholder {
+        color: white;
+    } /* Mozilla Firefox 19+ */
+    .form-control:-ms-input-placeholder {
+        color: white;
+    } /* Internet Explorer 10-11 */
+    .form-control::-ms-input-placeholder {
+        color: white;
+    }
+}
+
+
+
+.form-control {
+    padding: 1.7rem;
+}
+
+.form-control {
+    padding-left: 5rem;
+}
+
+.fa {
+    margin-top: 0.1rem;
+}
+
+.form-control + .fa {
+    position: absolute;
+    left: 1.5rem;
+    top: 0.6rem;
+    padding: 8px 27px;
+}
+
+.mydropdown:focus {
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #2b3945;
+}
+
+.light-hover:hover{
+    background-color: lightblue;
+}
+
+.mydropdown-light:focus {
+    box-shadow: none !important;
+    border: none !important;
+    background-color: $White;
+}
+
+.mydropdownItems {
+    width: inherit;
+    background-color: #2b3945;
+    .mydropdownItem {
+        color: white;
+    }
+    .mydropdownItem:hover {
+        color: white;
+        background-color: #2b3945;
+        width: inherit;
+    }
+    .mydropdownItem:focus {
+        border: none !important;
+    }
+}
+
+.mydropdownItems-light {
+    width: inherit;
+    background-color: $White;
+    .mydropdownItem-light {
+        color: black;
+    }
+    .mydropdownItem-light:hover {
+        color:black;
+        background-color: white;
+        width: inherit;
+    }
+    .mydropdownItem-light:focus {
+        border: none !important;
+    }
+}
+
+.custom-link {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: auto;
+    margin-right: 0.4rem;
+    color: white;
+    background-color: $DarkBlue;
+    font-weight: 300;
+    font-family: Nunito Sans;
+}
+
+.custom-link-dark{
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: auto;
+    margin-right: 0.4rem;
+    color: Black;
+    background-color: $White;
+    font-weight: 300;
+    font-family: Nunito Sans;
+}
+
+.header {
+    // background-color: $DarkBlue;
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    p {
+        font-weight: 600;
+    }
+}
+
+.de-Link{
+    // color:white !important;
+}
+
+.de-Link:hover{
+    // color:white ;
+    text-decoration: none !important;
+}
+
+
+.heading {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.my-li {
+    li {
+        // font-size: 0.8rem;
+        line-height: 1.6rem;
+        span {
+            // font-size: 0.9rem;
+            font-weight: 600;
+        }
+    }
+}

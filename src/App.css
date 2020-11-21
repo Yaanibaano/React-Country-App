@@ -1,38 +1,279 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+html, body {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dup-body {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.animation-container {
+  margin-top: 20vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #202c37;
+  font-weight: 300;
+  font-family: Nunito Sans;
+  height: 100%;
+}
+
+.bg-veryLightGray {
+  background-color: #fafafa;
+}
+
+.bgLightElements {
+  background-color: white;
+}
+
+.bg-test-2 {
+  background-color: green;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-card h5 {
+  font-weight: 800;
+}
+
+.custom-card li {
+  list-style: none;
+}
+
+.custom-card .sideText {
+  font-weight: 600;
+}
+
+.page-enter {
+  opacity: 0.01;
+}
+
+.page-enter-active {
+  opacity: 1;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.card-hover-dark:hover {
+  background-color: #444d56;
+}
+
+.card-hover-light:hover {
+  background-color: lightblue;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-test {
+  background-color: red;
+}
+
+.my-bg {
+  background-color: #202c37;
+}
+
+.my-bg-2 {
+  background-color: #2b3945;
+}
+
+.mydropdown {
+  font-weight: 300;
+  font-family: Nunito Sans;
+  border: none !important;
+  padding: 1rem;
+  background-color: #2b3945;
+}
+
+.mydropdown-light {
+  font-weight: 300;
+  font-family: Nunito Sans;
+  border: none !important;
+  padding: 1rem;
+  background-color: white;
+}
+
+.main-body {
+  margin-top: 2rem;
+}
+
+.main-body .container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-white {
+  /* WebKit, Blink, Edge */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* Internet Explorer 10-11 */
+}
+
+.sub-white .form-control::-webkit-input-placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-white .form-control:-moz-placeholder {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-white .form-control::-moz-placeholder {
+  color: white;
 }
+
+.sub-white .form-control:-ms-input-placeholder {
+  color: white;
+}
+
+.sub-white .form-control::-ms-input-placeholder {
+  color: white;
+}
+
+.form-control {
+  padding: 1.7rem;
+}
+
+.form-control {
+  padding-left: 5rem;
+}
+
+.fa {
+  margin-top: 0.1rem;
+}
+
+.form-control + .fa {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.6rem;
+  padding: 8px 27px;
+}
+
+.mydropdown:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  background-color: #2b3945;
+}
+
+.light-hover:hover {
+  background-color: lightblue;
+}
+
+.mydropdown-light:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  background-color: white;
+}
+
+.mydropdownItems {
+  width: inherit;
+  background-color: #2b3945;
+}
+
+.mydropdownItems .mydropdownItem {
+  color: white;
+}
+
+.mydropdownItems .mydropdownItem:hover {
+  color: white;
+  background-color: #2b3945;
+  width: inherit;
+}
+
+.mydropdownItems .mydropdownItem:focus {
+  border: none !important;
+}
+
+.mydropdownItems-light {
+  width: inherit;
+  background-color: white;
+}
+
+.mydropdownItems-light .mydropdownItem-light {
+  color: black;
+}
+
+.mydropdownItems-light .mydropdownItem-light:hover {
+  color: black;
+  background-color: white;
+  width: inherit;
+}
+
+.mydropdownItems-light .mydropdownItem-light:focus {
+  border: none !important;
+}
+
+.custom-link {
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  margin-bottom: auto;
+  margin-right: 0.4rem;
+  color: white;
+  background-color: #2b3945;
+  font-weight: 300;
+  font-family: Nunito Sans;
+}
+
+.custom-link-dark {
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  margin-bottom: auto;
+  margin-right: 0.4rem;
+  color: Black;
+  background-color: white;
+  font-weight: 300;
+  font-family: Nunito Sans;
+}
+
+.header h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.header p {
+  font-weight: 600;
+}
+
+.de-Link:hover {
+  text-decoration: none !important;
+}
+
+.heading {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.my-li li {
+  line-height: 1.6rem;
+}
+
+.my-li li span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=App.css.map */

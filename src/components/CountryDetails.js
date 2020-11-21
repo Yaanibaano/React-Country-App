@@ -73,7 +73,6 @@ const CountryDetailsBody = ({borders,country,mode }) => {
 }
 
 export const CountryDetails = (props) => {
-    console.log(props.countries);
     return (
         <div className="dup-body">
             <BackButtonLayer mode={props.mode}></BackButtonLayer>

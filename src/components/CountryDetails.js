@@ -15,7 +15,7 @@ const CustomLinks = ({text,mode}) => {
         );
     }
     return (
-        <div className={"shadow mt-sm-0 mt-2"+(!mode?"custom-link":"custom-link-dark")}>
+        <div className={"shadow mt-sm-0 mt-2 "+(!mode?"custom-link":"custom-link-dark")}>
             <p >{text}</p>
         </div>
     );

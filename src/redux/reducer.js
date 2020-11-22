@@ -1,6 +1,8 @@
+import {Countries} from "./resources.js"
+
 export const initalState = {
     isLoading: false,
-    countries: [],
+    countries: Countries,
     region: "All",
     darkMode: true,
     search: "",

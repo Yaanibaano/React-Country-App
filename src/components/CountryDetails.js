@@ -23,7 +23,7 @@ const CustomLinks = ({text,mode}) => {
 
 const BackButtonLayer = ({mode}) => {
     return (
-        <div className="row justify-content-center my-5">
+        <div className="row justify-content-center mb-5">
             <div className="container row justify-content-start">
                 <CustomLinks text="Back" mode={mode}></CustomLinks>
             </div>
@@ -74,7 +74,7 @@ const CountryDetailsBody = ({borders,country,mode }) => {
 
 export const CountryDetails = (props) => {
     return (
-        <div className="dup-body">
+        <div className="dup-body p-sm-0 p-5">
             <BackButtonLayer mode={props.mode}></BackButtonLayer>
             <CountryDetailsBody borders={props.borders} country={props.country} mode={props.mode}></CountryDetailsBody>
         </div>

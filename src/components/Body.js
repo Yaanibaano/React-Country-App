@@ -101,7 +101,7 @@ export const MainBodyComponent = ({ isLoading, countries, mode, changeRegion, re
     }
     else {
         return (
-            <div className="dup-body">
+            <div className="dup-body p-sm-0 p-5">
                 <BodyHeaderComponent mode={mode} countries={countries} region={region} changeRegion={changeRegion} changeSearch={changeSearch}></BodyHeaderComponent>
             </div>
         );

@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 
 export const Header = ({mode,onClick}) =>{
-    return(<div className={"row justify-content-center header py-4 shadow mb-5 "+(!mode?"my-bg-2 ":"bgLightElements")}>
+    return(<div className={"row justify-content-center header py-4 shadow mb-sm-5 "+(!mode?"my-bg-2 ":"bgLightElements")}>
         <div className="container row justify-content-between ">
             <div className="col-sm-6 col-7 text-light row justify-content-sm-start justify-content-end">
                 <h3 className={"my-auto p-sm-0 "+(!mode?"text-light":"text-dark")}>Where in the World?</h3>

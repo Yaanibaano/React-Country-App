@@ -1,5 +1,4 @@
 // ActionTypes
-import { Countries } from "./resources";
 const ChangeMode = "CHANGE_MODE";
 const ChangeRegion = "CHANGE_REGION";
 const ChangeSearch = "CHANGE_SEARCH";

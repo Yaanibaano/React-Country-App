@@ -10,12 +10,12 @@ const CustomLinks = ({text,mode}) => {
     if (text === "Back") {
         return (
             <div className="shadow">
-                <Button className={"btn "+(!mode?"btn-dark my-bg-2":"btn-light bgLightElements")} onClick={gobackHandle}>Go back</Button>
+                <Button className={"btn "+(!mode?"btn-dark my-bg-2":"btn-light bgLightElements")} onClick={gobackHandle}><span className="fa fa-arrow-left mr-2"></span>Go back</Button>
             </div>
         );
     }
     return (
-        <div className={"shadow "+(!mode?"custom-link":"custom-link-dark")}>
+        <div className={"shadow mt-sm-0 mt-2"+(!mode?"custom-link":"custom-link-dark")}>
             <p >{text}</p>
         </div>
     );
